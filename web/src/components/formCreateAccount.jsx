@@ -27,7 +27,7 @@ export function FormCreateAccount() {
                 </div>
             </div>
 
-            <div className="w-full py-4">
+            <div className="w-full pt-1">
                 <Button>
                     Criar conta
                 </Button>
