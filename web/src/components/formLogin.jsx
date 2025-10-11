@@ -12,21 +12,21 @@ export function FormLogin() {
     }
 
     return (
-        <div className="flex flex-col gap-4 bg-card min-h-screen items-center justify-center p-8">
+        <div className="flex flex-col w-full gap-4 items-center justify-center p-4">
             <p className="text-lg text-font lg:text-2xl">Acesse sua conta</p>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 w-full lg:w-90">
                 <p className="text-sm text-font lg:text-xl">E-mail</p>
-                <div className="flex gap-1 px-4 py-2 bg-input rounded w-60 lg:w-90">
-                    <Mail className="text-black" />
+                <div className="flex gap-1 px-4 py-2 bg-input rounded lg:w-90">
+                    <Mail className="text-font" />
                     <Input type="text" placeholder="Digite seu e-mail" />
                 </div>
             </div>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 w-full lg:w-90">
                 <p className="text-sm text-font lg:text-xl">Senha</p>
-                <div className="flex gap-1 px-4 py-2 bg-input rounded w-60 lg:w-90">
-                    <LockKeyhole className="text-black" />
+                <div className="flex gap-1 px-4 py-2 bg-input rounded lg:w-90">
+                    <LockKeyhole className="text-font" />
                     <Input 
                         type="password" 
                         placeholder="Digite sua senha" 
@@ -34,7 +34,7 @@ export function FormLogin() {
                 </div>
             </div>
 
-            <div className="w-60 lg:w-90">
+            <div className="w-full lg:w-90">
                 <Button>
                     Acessar
                     <ArrowRight />
@@ -43,7 +43,7 @@ export function FormLogin() {
 
             <p className="text-sm text-font">Não tem uma conta?</p>
 
-            <div className="w-60 lg:w-90">
+            <div className="w-full lg:w-90">
                 <Button onClick={handleNavigateToCreateAccount}>
                     Criar conta
                     <ArrowRight />
