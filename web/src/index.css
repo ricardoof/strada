@@ -8,5 +8,7 @@
   --color-input: oklch(37% 0.013 285.805);
   --color-button: oklch(14.1% 0.005 285.823);
   --color-font: oklch(92.8% 0.006 264.531);
+  --color-red: oklch(63.7% 0.237 25.331);
+  --color-green: oklch(72.3% 0.219 149.579);
 }
 

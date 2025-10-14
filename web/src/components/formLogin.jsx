@@ -11,6 +11,10 @@ export function FormLogin() {
         navigate('/create-account');
     }
 
+    const handleNavigateToHome = () => {
+        navigate('/home');
+    }
+
     return (
         <div className="flex flex-col w-full gap-4 items-center justify-center p-4">
             <p className="text-lg text-font lg:text-2xl">Acesse sua conta</p>
@@ -35,7 +39,7 @@ export function FormLogin() {
             </div>
 
             <div className="w-full lg:w-90">
-                <Button>
+                <Button onClick={handleNavigateToHome}>
                     Acessar
                     <ArrowRight />
                 </Button>
