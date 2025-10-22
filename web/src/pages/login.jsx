@@ -9,7 +9,9 @@ export function Login() {
             </div>
 
             <div className="flex flex-col items-center justify-start lg:w-1/3">
-                <Logo />
+                <div className="lg:hidden">
+                    <img src="https://www.placecats.com/neo/300/200" alt="Logo da Strada" />
+                </div>
                 <div className="flex flex-col w-80 rounded-2xl items-center bg-card justify-center lg:min-h-screen lg:rounded-none lg:w-full">
                     <FormLogin />
 
@@ -19,7 +21,7 @@ export function Login() {
                     </div>
                 </div>
 
-                <div className="flex gap-4 p-4">
+                <div className="flex gap-4 p-4 lg:hidden">
                     <p className="text-sm text-font">Termos de uso</p>
                     <p className="text-sm text-font">Política de privacidade</p>
                 </div>

@@ -2,6 +2,7 @@ import { Button } from "../components/button";
 import { Input } from "../components/input";
 import { useNavigate } from 'react-router-dom';
 import { Logo } from "../components/logo";
+import { Header } from "../components/header";
 
 export function Home() {
 
@@ -12,8 +13,8 @@ export function Home() {
     }
 
     return (
-        <div className="relative flex flex-col w-full bg-background min-h-screen gap-8 items-center justify-center p-4 lg:justify-start lg:p-8">
-            <Logo />
+        <div className="relative flex flex-col w-full bg-background min-h-screen gap-4 items-center justify-center p-4 lg:justify-start">
+            <Header />
             
             <div className="flex flex-col w-full items-start justify-center gap-8 lg:flex-row-reverse">
                 <div className="flex flex-col w-full bg-card p-4 rounded-2xl items-center justify-center gap-4 lg:w-xl">
