@@ -10,9 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Login />} path={'/'}/>
+        <Route element={<Home />} path={'/'}/>
+        <Route element={<Login />} path={'/login'}/>
         <Route element={<CreateAccount />} path={'/create-account'}/>
-        <Route element={<Home />} path={'/home'}/>
         <Route element={<Travel />} path={'/travel'}/>
         <Route element={<Cart />} path={'/cart'}/>
       </Routes>

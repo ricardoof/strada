@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @theme {
+  --color-background: oklch(98.5% 0.001 106.423);
+  --color-card: oklch(92.3% 0.003 48.717);
+  --color-input: oklch(97% 0.001 106.424);
+  --color-button:oklch(55.3% 0.013 58.071);
+  --color-button-primary: oklch(76.9% 0.188 70.08);
+  --color-font:oklch(14.7% 0.004 49.25);
+  --color-red: oklch(63.7% 0.237 25.331);
+  --color-green: oklch(72.3% 0.219 149.579);
+}
+
+/* @theme {
   --color-background: oklch(21% 0.006 285.885);
   --color-card: oklch(27.4% 0.006 286.033);
   --color-input: oklch(37% 0.013 285.805);
@@ -10,5 +21,5 @@
   --color-font: oklch(92.8% 0.006 264.531);
   --color-red: oklch(63.7% 0.237 25.331);
   --color-green: oklch(72.3% 0.219 149.579);
-}
+} */
 

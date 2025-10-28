@@ -2,7 +2,7 @@ import { Seat} from "../components/seat"
 
 export function Bus() {
     return (
-        <div className="flex flex-col w-full items-center justify-between bg-card rounded-2xl p-2 lg:w-80">
+        <div className="flex flex-col w-full items-center justify-between bg-card shadow-md rounded-2xl p-2 lg:w-80">
             <h2 className="text-font text-2xl p-4">Selecione um assento</h2>
             <div className="flex items-center justify-center gap-4">
                 <div className="grid grid-cols-2 p-2 gap-2">
