@@ -17,19 +17,19 @@ export function FormLogin() {
     }
 
     return (
-        <div className="flex flex-col w-full gap-4 items-center justify-center p-4 lg:w-96">
+        <div className="flex flex-col w-full gap-4 items-center justify-center p-4">
             <p className="text-lg text-font lg:text-2xl">Acesse sua conta</p>
 
-            <div className="flex flex-col gap-1 w-full lg:w-90">
-                <p className="text-sm text-font lg:text-xl">E-mail</p>
+            <div className="flex flex-col gap-1 w-full">
+                <p className="text-sm text-font lg:text-lg">E-mail</p>
                 <InputGroup> 
                     <Mail className="text-font/50" />
                     <Input type="text" placeholder="Digite seu e-mail" />
                 </InputGroup>
             </div>
 
-            <div className="flex flex-col gap-1 w-full lg:w-90">
-                <p className="text-sm text-font lg:text-xl">Senha</p>
+            <div className="flex flex-col gap-1 w-full">
+                <p className="text-sm text-font lg:text-lg">Senha</p>
                 <InputGroup>
                     <LockKeyhole className="text-font/50" />
                     <Input 
@@ -39,7 +39,7 @@ export function FormLogin() {
                 </InputGroup>
             </div>
 
-            <div className="w-full lg:w-90">
+            <div className="w-full">
                 <Button justify="between" width="full" onClick={handleNavigateToHome}>
                     Acessar
                     <ArrowRight />

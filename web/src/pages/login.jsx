@@ -6,7 +6,7 @@ export function Login() {
         <div className=" flex flex-col min-h-screen gap-24 items-center justify-start bg-background p-4">
             <Header/>
             <div className="flex flex-col items-center justify-start">
-                <div className="flex w-80 rounded-2xl items-center bg-card shadow-md justify-center lg:w-100">
+                <div className="flex w-80 rounded-2xl items-center bg-card shadow-md justify-center lg:w-sm">
                     <FormLogin />
                 </div>
 
