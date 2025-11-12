@@ -1,34 +1,41 @@
-import { cva } from "class-variance-authority";
 import { cn } from "../utils";
 
-const paymentVariants = cva(
-  "flex items-center w-full p-4 rounded-lg cursor-pointer transition-all bg-input",
-  {
-    variants: {
-      isSelected: {
-        true: "ring-2 ring-white/50",
-        false: "opacity-70 hover:opacity-100",
-      },
-    },
-  }
-);
+export function PaymentOption({ className, label, name, value, checked, onChange, ...props }) {
+  const inputId = `payment-${value}`; 
 
-function RadioDot({ isSelected }) {
   return (
-    <div className="w-5 h-5 rounded-full border-2 border-font/50 flex items-center justify-center mr-3">
-      {isSelected && <div className="w-3 h-3 rounded-full bg-font" />}
-    </div>
-  );
-}
-
-export function PaymentOption({ className, isSelected, label, ...props }) {
-  return (
-    <div
-      className={cn(paymentVariants({ isSelected, className }))}
+    <label
+      htmlFor={inputId}
+      className={cn("cursor-pointer", className)}
       {...props}
     >
-      <RadioDot isSelected={isSelected} />
-      <span className="text-font">{label}</span>
-    </div>
+      <input 
+        id={inputId} 
+        type="radio" 
+        name={name}
+        value={value}
+        checked={checked}
+        onChange={onChange}
+        className="sr-only"
+      />
+
+      <div className={cn(
+        "flex items-center w-full p-4 rounded-md transition-all duration-200 bg-input ring-2",
+        checked ? "ring-[var(--color-button-primary)]" : "ring-transparent"
+      )}>
+        <div className={cn(
+          "w-5 h-5 rounded-full border-2 flex items-center justify-center mr-3 transition-colors duration-200",
+          checked ? "border-font" : "border-font/50"
+        )}>
+          {checked && (
+            <div className="w-3 h-3 rounded-full bg-font" />
+          )}
+        </div>
+        
+        <span className="text-font">
+          {label}
+        </span>
+      </div>
+    </label>
   );
 }
