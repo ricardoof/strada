@@ -3,8 +3,17 @@ import { Button } from './button';
 import { Input } from './input';
 import { useNavigate } from 'react-router-dom';
 import { InputGroup } from './inputGroup';
+import { useAuth } from '../contexts/AuthContext';
 
 export function FormLogin() {
+    const { login } = useAuth();
+
+    const handleLoginSubmit = () => {
+        // (Aqui você validaria o e-mail e a senha)
+        
+        // Se a validação for OK:
+        login();
+    }
 
     const navigate = useNavigate();
 
@@ -40,7 +49,7 @@ export function FormLogin() {
             </div>
 
             <div className="w-full">
-                <Button justify="between" width="full" onClick={handleNavigateToHome}>
+                <Button justify="between" width="full" onClick={handleLoginSubmit}>
                     Acessar
                     <ArrowRight />
                 </Button>

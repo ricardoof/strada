@@ -9,22 +9,23 @@ import { CreditCard } from './pages/creditCard'
 import { DebitCard } from './pages/debitCard'
 import { Ticket } from './pages/ticket'
 import { Pix } from './pages/pix'
+import { MainLayout } from './layouts/MainLayout'
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
-        <Route element={<Home />} path={'/'}/>
-        <Route element={<Login />} path={'/login'}/>
-        <Route element={<CreateAccount />} path={'/create-account'}/>
+      <Route element={<Login />} path={'/login'}/>
+      <Route element={<CreateAccount />} path={'/create-account'}/>
+      <Route element={<MainLayout />} path="/">
+        <Route index element={<Home />} />
         <Route element={<Travel />} path={'/travel'}/>
         <Route element={<Cart />} path={'/cart'}/>
         <Route element={<CreditCard/>} path={'/payment/credit_card'}/>
         <Route element={<DebitCard/>} path={'/payment/debit_card'}/>
         <Route element={<Ticket/>} path={'/payment/boleto'}/>
         <Route element={<Pix/>} path={'/payment/pix'}/>
-      </Routes>
-    </BrowserRouter>
+      </Route>
+    </Routes>
   )
 }
 

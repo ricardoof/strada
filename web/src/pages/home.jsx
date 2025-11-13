@@ -1,7 +1,6 @@
 import { Button } from "../components/button";
 import { Input } from "../components/input";
 import { useNavigate } from 'react-router-dom';
-import { Header } from "../components/header";
 import { InputGroup } from "../components/inputGroup";
 import { useState } from "react";
 
@@ -22,8 +21,6 @@ export function Home() {
 
     return (
         <div className="relative flex flex-col w-full bg-background min-h-screen gap-4 items-center justify-start p-4">
-            <Header />
-            
             <div className="flex flex-col w-full items-center justify-center gap-8">
                 <div className="flex flex-col w-full bg-card shadow-xl p-4 rounded-2xl items-center justify-center gap-4 lg:w-xl">
                     <h1 className="text-font text-2xl lg:text-4xl">Bem-vindo à Strada!</h1>

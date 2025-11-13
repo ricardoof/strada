@@ -4,13 +4,13 @@ export function MyCart() {
     return (
         <div className="flex flex-col w-full bg-card gap-4 items-center justify-center p-4 rounded-2xl">
             <div className="flex w-full justify-between">
-                <p className="text-font text-xs">Viagens</p>
+                <p className="text-font text-base">Viagens</p>
                 <div className="flex text-xs gap-1 items-center cursor-pointer">
                     <CircleX size={12} className="text-red" />
                     <p className="text-red">Limpar carrinho</p>
                 </div>
             </div>
-
+            
             <div className="flex flex-col w-full gap-2">
                 <div className="flex w-full justify-between">
                     <p className="text-font">Viagem A</p>

@@ -8,7 +8,7 @@ export function PaymentMethods({ paymentMethod, setPaymentMethod }) {
 
   return (
     <div className="flex flex-col w-full bg-card gap-4 items-center justify-center p-4 rounded-2xl">
-      <p className="text-font text-md">Formas de pagamento</p>
+      <p className="text-font text-base">Formas de pagamento</p>
 
       <div className="flex flex-col w-full gap-4">
         <PaymentOption 
