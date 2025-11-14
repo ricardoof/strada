@@ -24,8 +24,8 @@ export function Header() {
 
     return (
         <header className="flex w-full justify-between items-center p-4">
-            <div className="w-28 p-4" onClick={handleNavigateToHome}>
-                <img src="https://www.placecats.com/neo/300/200" alt="Logo da Strada" />
+            <div className="text-font text-3xl font-bold font-logo cursor-pointer" onClick={handleNavigateToHome}>
+                <h2>Strada</h2>
             </div>
 
             <div className="flex gap-4">

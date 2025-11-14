@@ -8,21 +8,21 @@ export function PaymentMethods({ paymentMethod, setPaymentMethod }) {
 
   return (
     <div className="flex flex-col w-full bg-card gap-4 items-center justify-center p-4 rounded-2xl">
-      <p className="text-font text-base">Formas de pagamento</p>
+      <p className="text-font text-xl">Formas de pagamento</p>
 
       <div className="flex flex-col w-full gap-4">
         <PaymentOption 
           label="Cartão de crédito"
           name="payment" 
-          value="credit_card" 
-          checked={paymentMethod === 'credit_card'} 
+          value="credit-card" 
+          checked={paymentMethod === 'credit-card'} 
           onChange={handleChange} 
         />
         <PaymentOption 
           label="Cartão de débito"
           name="payment"
-          value="debit_card"
-          checked={paymentMethod === 'debit_card'}
+          value="debit-card"
+          checked={paymentMethod === 'debit-card'}
           onChange={handleChange}
         />
         <PaymentOption 

@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "../components/header"; // Importe seu Header
+import { Footer } from "../components/footer";
 
 export function MainLayout() {
   return (
@@ -8,6 +9,7 @@ export function MainLayout() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 }

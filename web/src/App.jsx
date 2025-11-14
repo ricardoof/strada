@@ -10,6 +10,7 @@ import { DebitCard } from './pages/debitCard'
 import { Ticket } from './pages/ticket'
 import { Pix } from './pages/pix'
 import { MainLayout } from './layouts/MainLayout'
+import { PurchaseCompleted } from './pages/purchaseCompleted'
 
 function App() {
   return (
@@ -20,10 +21,14 @@ function App() {
         <Route index element={<Home />} />
         <Route element={<Travel />} path={'/travel'}/>
         <Route element={<Cart />} path={'/cart'}/>
-        <Route element={<CreditCard/>} path={'/payment/credit_card'}/>
-        <Route element={<DebitCard/>} path={'/payment/debit_card'}/>
-        <Route element={<Ticket/>} path={'/payment/boleto'}/>
-        <Route element={<Pix/>} path={'/payment/pix'}/>
+        <Route element={<CreditCard />} path={'/payment/credit-card'}/>
+        <Route element={<DebitCard />} path={'/payment/debit-card'}/>
+        <Route element={<Ticket />} path={'/payment/boleto'}/>
+        <Route element={<Pix />} path={'/payment/pix'}/>
+        <Route element={<PurchaseCompleted />} path={'/payment/credit-card/purchase-completed'}/>
+        <Route element={<PurchaseCompleted />} path={'/payment/debit-card/purchase-completed'}/>
+        <Route element={<PurchaseCompleted />} path={'/payment/boleto/purchase-completed'}/>
+        <Route element={<PurchaseCompleted />} path={'/payment/pix/purchase-completed'}/>
       </Route>
     </Routes>
   )

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
 
 @tailwind utilities;
@@ -11,15 +13,12 @@
   --color-font:oklch(14.7% 0.004 49.25);
   --color-red: oklch(63.7% 0.237 25.331);
   --color-green: oklch(72.3% 0.219 149.579);
+  --font-logo: 'Outfit', sans-serif;
+  --font-body: 'Roboto', sans-serif;
 }
 
-/* @theme {
-  --color-background: oklch(21% 0.006 285.885);
-  --color-card: oklch(27.4% 0.006 286.033);
-  --color-input: oklch(37% 0.013 285.805);
-  --color-button: oklch(14.1% 0.005 285.823);
-  --color-font: oklch(92.8% 0.006 264.531);
-  --color-red: oklch(63.7% 0.237 25.331);
-  --color-green: oklch(72.3% 0.219 149.579);
-} */
-
+@layer base {
+  body {
+    @apply font-body;
+  }
+}
