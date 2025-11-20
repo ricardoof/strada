@@ -8,12 +8,18 @@ import { useAuth } from '../contexts/AuthContext';
 export function FormLogin() {
     const { login } = useAuth();
 
-    const handleLoginSubmit = () => {
-        // (Aqui você validaria o e-mail e a senha)
+    const handleLoginSubmit = async () => {
+    try {
+        // Faz a chamada para o seu servidor
+        const response = await fetch('http://localhost:3333/users');
+        const data = await response.json();
+        console.log(data);
         
-        // Se a validação for OK:
-        login();
+        // ... resto da lógica de login
+    } catch (error) {
+        console.error("Erro ao conectar com servidor", error);
     }
+}
 
     const navigate = useNavigate();
 

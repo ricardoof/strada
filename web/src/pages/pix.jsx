@@ -37,7 +37,7 @@ export function Pix() {
 
                 <div className="border-4 border-input p-2 rounded-xl">
                     <img 
-                        src="/public/qrcode.png" 
+                        src="/qrcode.png" 
                         alt="QR-Code Pix" 
                         className="w-48 h-48 object-contain"
                     />
