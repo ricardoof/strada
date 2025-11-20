@@ -30,7 +30,7 @@ export function Cart() {
                         setPaymentMethod={setPaymentMethod}
                     />
 
-                    <div className="flex flex-col w-full bg-card gap-4 items-center justify-center p-4 rounded-2xl">
+                    <div className="flex flex-col w-full bg-card gap-4 items-center justify-center p-4 rounded-2xl shadow-xl">
                         <div className="flex w-full items-center justify-between">
                             <p className="text-font text-base">Total a pagar:</p>
                             <p className="text-font font-bold text-lg">R$ 150,00</p>

@@ -11,7 +11,7 @@ export function TravelInfo() {
 
     return (
         <div className="flex flex-col w-full gap-4 items-center justify-start lg:w-90">
-            <div className="flex flex-col bg-card shadow-md w-full gap-4 items-center justify-center p-4 rounded-2xl">
+            <div className="flex flex-col bg-card shadow-xl w-full gap-4 items-center justify-center p-4 rounded-2xl">
                 <h2 className="text-font text-2xl p-4">Detalhes da Viagem A</h2>
 
                 <div className="flex flex-col w-full gap-4">

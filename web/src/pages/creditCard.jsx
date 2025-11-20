@@ -22,9 +22,9 @@ export function CreditCard() {
     ];
 
     return (
-        <div className="flex flex-col w-full bg-background min-h-screen gap-4 items-center justify-start p-4">
+        <div className="flex flex-col w-full bg-background gap-4 items-center justify-start p-4">
             <div className="flex flex-col w-full bg-card gap-4 items-center justify-start shadow-xl p-4 rounded-2xl lg:w-md">
-                <h2>Informações de pagamento</h2>
+                <h2 className="text-font text-xl">Informações de pagamento</h2>
                 <div className="flex flex-col w-full gap-2">
                     <p>Número do cartão:</p>
                     <InputGroup variant="primary">
@@ -40,19 +40,21 @@ export function CreditCard() {
                 </div>
 
                 <div className="flex flex-col w-full gap-2 lg:flex-row">
-                    <div className="flex flex-col gap-2 w-1/6">
-                        <p>CVV:</p>
-                        <InputGroup variant="primary">
-                            <Input type="text" placeholder="CVV" />
-                        </InputGroup>
+                    <div className="flex w-full gap-4 lg:w-1/2">
+                        <div className="flex flex-col w-16 gap-2">
+                            <p>CVV:</p>
+                            <InputGroup variant="primary">
+                                <Input type="text" placeholder="CVV" />
+                            </InputGroup>
+                        </div>
+                        <div className="flex flex-col gap-2 w-25">
+                            <p>Exp:</p>
+                            <InputGroup variant="primary">
+                                <Input type="text" placeholder="MM/AA" />
+                            </InputGroup>
+                        </div>
                     </div>
-                    <div className="flex flex-col gap-2 w-2/6">
-                        <p>Exp:</p>
-                        <InputGroup variant="primary">
-                            <Input type="text" placeholder="MM/AA" />
-                        </InputGroup>
-                    </div>
-                    <div className="flex flex-col gap-2 w-3/6">
+                    <div className="flex flex-col gap-2 w-1/2">
                         <p>Nº de parcelas:</p>
                         <InputGroup variant="primary" className="relative">
                             <Select 

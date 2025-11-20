@@ -2,7 +2,7 @@ import { CircleX } from "lucide-react";
 
 export function MyCart() {
     return (
-        <div className="flex flex-col w-full bg-card gap-4 items-center justify-center p-4 rounded-2xl">
+        <div className="flex flex-col w-full bg-card gap-4 items-center justify-center p-4 rounded-2xl shadow-xl">
             <div className="flex w-full justify-between">
                 <p className="text-font text-xl">Viagens</p>
                 <div className="flex text-xs gap-1 items-center cursor-pointer">

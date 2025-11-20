@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Login } from './pages/login'
 import { CreateAccount } from './pages/createAccount'
@@ -23,11 +23,11 @@ function App() {
         <Route element={<Cart />} path={'/cart'}/>
         <Route element={<CreditCard />} path={'/payment/credit-card'}/>
         <Route element={<DebitCard />} path={'/payment/debit-card'}/>
-        <Route element={<Ticket />} path={'/payment/boleto'}/>
+        <Route element={<Ticket />} path={'/payment/ticket'}/>
         <Route element={<Pix />} path={'/payment/pix'}/>
         <Route element={<PurchaseCompleted />} path={'/payment/credit-card/purchase-completed'}/>
         <Route element={<PurchaseCompleted />} path={'/payment/debit-card/purchase-completed'}/>
-        <Route element={<PurchaseCompleted />} path={'/payment/boleto/purchase-completed'}/>
+        <Route element={<PurchaseCompleted />} path={'/payment/ticket/purchase-completed'}/>
         <Route element={<PurchaseCompleted />} path={'/payment/pix/purchase-completed'}/>
       </Route>
     </Routes>
